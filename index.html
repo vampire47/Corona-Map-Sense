@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <title>Corona Map Sense</title>
+</head>
+
+<body>
+    <div id='map'></div>
+
+</body>
+
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+
+
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibmlnaHRmdXJ5MDA3IiwiYSI6ImNrYjR3cXlxazBpaWMyeW16NTkzenNrOHUifQ.MGdMcvJ4tNcvNe5GoQMDFg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-v9'
+    });
+</script>
+
+
+<script src="index.js"></script>
+
+</html>
